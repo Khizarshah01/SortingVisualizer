@@ -1,0 +1,67 @@
+:root {
+  --width:40px;
+}
+
+body {
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  zoom: 75%;
+}
+
+/* Navigation Bar */
+.container-fluid {
+  padding: 1% 2% 0 2%;
+  text-align: left;
+}
+
+.appName {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.navItemsList {
+  margin-left: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.newArray {
+  margin-right: 1rem;
+}
+
+.navDropdown {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Bars */
+.barsCon {
+  margin-top: 5%;
+  height: 70vh;
+}
+.bar {
+  width: var(--width);
+  background-color: whitesmoke;
+  margin-right: 2px;
+  margin-left: 5px;
+  display: inline-block;
+  border-radius: 50px;
+  box-shadow: 3px 5px #888888;
+  transition: ease-out 0.3s;
+}
+
+/* Sort Btn */
+.btn-lg {
+  font-size: 1.75rem;
+  border-radius: 50px;
+  box-shadow: 5px 3px #888888;
+  font-weight: bold;
+  width: 225px;
+}
+
+ .bar:hover {
+  transition: 0.3s ease-out;
+  box-shadow: 10px 10px 10px 10px blue;
+  width: 3%;
+  margin: 0px 5px 0px 7px;
+} 
