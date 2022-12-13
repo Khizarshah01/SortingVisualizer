@@ -17,12 +17,14 @@ function disable() {
   sortBtn.classList.add('disabled')
   speedRange.setAttribute('disabled', '')
   arrayRange.setAttribute('disabled', '')
+  document.body.style.cursor = 'now-allowed';
 }
 function enable() {
   dropdownToggle.classList.remove('disabled')
   sortBtn.classList.remove('disabled')
   speedRange.removeAttribute('disabled')
   arrayRange.removeAttribute('disabled')
+  document.body.style.cursor = 'pointer';
 }
 
 // Navigation Bar Dropdown Swapping
@@ -39,7 +41,7 @@ for (let i = 0; i < A.length; i++) {
 // Bars
 let barsHeight = []
 let bars = []
-let n = 30
+let n = 10
 function arraySizeChange(changed) {
   n = changed
   console.log(n)
@@ -57,7 +59,7 @@ function generateNewArray() {
     document.documentElement.style.setProperty('--width', '40px')
   }
   for (let i = 0; i < n; i++) {
-    barsHeight[i] = randomNumber(100, 500)
+    barsHeight[i] = randomNumber(100, 600)
     bars[i] = document.createElement('div')
     bars[i].classList.add('bar')
     barsCon.appendChild(bars[i])
@@ -72,7 +74,7 @@ function generateNewArray() {
 document.querySelector('.newArray').addEventListener('click', generateNewArray)
 
 //Visuals
-let speed = 500
+let speed = 50
 let c = 0
 let delay = 10000 / (Math.floor(n / 10) * speed)
 
@@ -117,14 +119,20 @@ sortBtn.addEventListener('click', () => {
 //Sorting Algorithms
 
 // colors
-let p = 'red'
-let p1 = 'orange'
-let p2 = 'yellow'
-let sorted = 'green'
-let heap = 'whitesmoke'
+// let p = 'red'
+// let p1 = 'orange'
+// let p2 = 'yellow'
+// let sorted = 'green'
+// let heap = 'whitesmoke'
+
+let p = 'white';
+let p1 = 'rgba(255,165,0, 0.9)';
+let p2 = 'rgba(255,165,0, 0.9)';
+let sorted = 'rgba(0, 164, 86, 0.6)';
+let heap = 'whitesmoke';
 
 // Bubble Sort
-function bubbleSort() {
+async function bubbleSort() {
   disable()
   for (let i = 0; i < n - 1; i++) {
     for (let j = 0; j < n - i - 1; j++) {
@@ -144,7 +152,8 @@ function bubbleSort() {
     anim(bars[n - 1 - i], barsHeight[n - 1 - i], sorted)
   }
   //sorted region
-  anim(bars[0], barsHeight[0], sorted)
+  anim(bars[0], barsHeight[0], sorted);
+  
 }
 
 // Selection Sort
@@ -194,5 +203,4 @@ function insertionSort() {
     anim(bars[j + 1], barsHeight[j + 1], sorted)
   }
 }
-
 generateNewArray()
