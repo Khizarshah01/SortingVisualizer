@@ -4,7 +4,7 @@
   <br>
 </h1>
 
-<h4 align="center">A cool sorting visualizer where you can edit the algorithms. <a href="https://khizarshah01.github.io/SortingVisualizer/">Demo here</a></h4>
+<h4 align="center">A cool sorting visualizer where you can edit the algorithms. <a href="http://projects.khizarshah01.me/">Demo here</a></h4>
 
 
 
