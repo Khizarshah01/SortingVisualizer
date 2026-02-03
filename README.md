@@ -12,6 +12,8 @@
 
 Sorting Visualizer is a web application designed to help users understand how sorting algorithms work through visual representation. It provides a real-time view of algorithms like Bubble Sort, Selection Sort, and Insertion Sort as they process a randomized array.
 
+<img width="1906" height="964" alt="Screenshot from 2026-02-03 20-57-29" src="https://github.com/user-attachments/assets/df2adec1-13c5-4ef0-9f43-9f0cf1f95bc3" />
+
 ## Features
 
 - **Interactive Controls**: Generate new arrays, adjust array size, and control sorting speed.
