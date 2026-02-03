@@ -85,7 +85,6 @@ nav {
 
 /* Custom Range Slider (Minimalist) */
 input[type=range] {
-    -webkit-appearance: none;
     width: 150px;
     background: transparent;
 }

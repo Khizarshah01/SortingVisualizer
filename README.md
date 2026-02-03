@@ -1,34 +1,40 @@
+<h1 align="center">Sorting Visualizer</h1>
 
-<h1 align="center">
-  Sorting Visualizer
+<p align="center">
+  A clean and interactive web-based sorting visualizer.
   <br>
-</h1>
+  <a href="http://projects.khizarshah01.me/"><strong>Explore the Demo »</strong></a>
+</p>
 
-<h4 align="center">A cool sorting visualizer where you can edit the algorithms. <a href="http://projects.khizarshah01.me/">Demo here</a></h4>
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+</p>
 
+---
 
+## About
+
+Sorting Visualizer is a web application designed to help users understand how sorting algorithms work through visual representation. It provides a real-time view of algorithms like Bubble Sort, Selection Sort, and Insertion Sort as they process a randomized array.
 
 ## Features
 
-* Sorting Visualising
-* Algorithm selection
-* Adjustable speed and size
+- **Interactive Controls**: Generate new arrays, adjust array size, and control sorting speed.
+- **Multiple Algorithms**: Visualize different sorting techniques side-by-side.
+- **Real-time Stats**: View the current sorting cycle count.
+- **Responsive Design**: Works on various screen sizes.
 
-## How To Use
+## Algorithms
 
-To clone and run this application, you'll need [Git](https://git-scm.com). From your command line:
+The current version supports the following algorithms:
 
-```bash
-# Clone this repository
-$ git clone https://github.com/Khizarshah01/SortingVisualizer.git
-
-# Go into the repository
-$ cd SortingVisualizer
-
-```
+| Algorithm | Time Complexity | Space Complexity | Description |
+|-----------|-----------------|------------------|-------------|
+| **Bubble Sort** | O(n²) | O(1) | Repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. |
+| **Selection Sort** | O(n²) | O(1) | divides the input list into two parts: a sorted sublist of items which is built up from left to right at the front (left) of the list and a sublist of the remaining unsorted items that occupy the rest of the list. |
+| **Insertion Sort** | O(n²) | O(1) | Builds the final sorted array (or list) one item at a time. |
 
 ## License
 
-MIT
-
----
+Distributed under the MIT License. See `LICENSE` for more information.
